@@ -6,9 +6,9 @@ function AppLayout ()
 {
     return (
         <>   {/*display elements horizontally(Flexbox)*/}
-            <div style={{ display : "flex"}}>
+            <div style={styles.wrapper}>
                 <Sidebar/>
-                <main >
+                <main  style={styles.main} >
                     <Outlet/>
                 </main>
             </div>
@@ -16,6 +16,21 @@ function AppLayout ()
     );
  
 }
+
+
+const styles = {
+  wrapper: {
+    display: "flex",
+    minHeight: "100vh",
+    width: "100%",  
+  },
+
+  main: {
+    flex: 1,           
+    padding: "20px",
+    overflow: "auto"
+  }
+};
 
 
 export default AppLayout;

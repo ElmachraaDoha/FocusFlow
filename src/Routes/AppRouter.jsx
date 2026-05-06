@@ -8,6 +8,8 @@ import LandingLayout from "../Layouts/LandingLayout.jsx";
 
 //importing Pages
 import Landing from "../Pages/Landing.jsx";
+import Features from "../Pages/Features.jsx";
+import About from "../Pages/About.jsx";
 import Login from "../Pages/Login.jsx";
 import Dashboard from "../Pages/Dashboard.jsx";
 import Tasks from "../Pages/Tasks.jsx";
@@ -24,8 +26,9 @@ const router =  createBrowserRouter([
     children:[
 
       {index:true ,element:<Landing/>},
-      {path:"Landing",element:<Landing/>},
-      {path:"login",element:<Login/>},
+      {path :"features", element :<Features/>},
+      {path :"about", element:<About/>},
+      {path :"login",element:<Login/>},
 
     ]
   },
