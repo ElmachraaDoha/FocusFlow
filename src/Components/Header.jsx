@@ -32,7 +32,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     padding: "0 16px",
-    backgroundColor: "rgba(144, 169, 85, 1)",
+    backgroundColor:" rgba(49, 87, 44, 1)",
     color: "rgba(236, 243, 158, 1)",
   },
 

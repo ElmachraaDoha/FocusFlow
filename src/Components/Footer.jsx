@@ -27,7 +27,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "rgba(144, 169, 85, 1)",
+    backgroundColor: "rgba(49, 87, 44, 1)",
     color: "rgba(236, 243, 158, 1)",
     fontSize: "14px",
   },

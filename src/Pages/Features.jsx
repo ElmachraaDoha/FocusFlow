@@ -11,22 +11,22 @@ export default function Features() {
       <div style={styles.grid}>
         
         <div style={styles.card}>
-          <h2>📊 Dashboard</h2>
+          <h2>Dashboard</h2>
           <p>Get a clear overview of your study progress and activity.</p>
         </div>
 
         <div style={styles.card}>
-          <h2>📝 Tasks</h2>
+          <h2>Tasks</h2>
           <p>Create, organize, and track your daily study tasks easily.</p>
         </div>
 
         <div style={styles.card}>
-          <h2>⏱ Pomodoro</h2>
+          <h2>Pomodoro</h2>
           <p>Stay focused using timed study sessions and breaks.</p>
         </div>
 
         <div style={styles.card}>
-          <h2>📈 Analytics</h2>
+          <h2>Analytics</h2>
           <p>Track your productivity with detailed progress insights.</p>
         </div>
 
