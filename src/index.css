@@ -17,7 +17,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background:rgb(247, 245, 245) ;
   font-family: var(--sans);
   color: var(--text);
 }

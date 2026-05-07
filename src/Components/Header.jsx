@@ -1,63 +1,34 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import FocusFlow from "../assets/FocusFlow.jpg";
+import "./Header.css";
 
 export default function Header() {
+  const location = useLocation();
+
   return (
-    <header style={styles.header}>
+    <header className="header">
       
-      <div style={styles.logo}>
-        🌿 FocusFlow
+      <div className="header-logo">
+        <img src={FocusFlow} alt="FocusFlow-logo" />
       </div>
+      
+      <nav className="header-nav">
+      <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+        Home
+      </Link>
 
-      <nav style={styles.nav}>
-        <Link style={styles.link} to="/">Home</Link>
-        <Link style={styles.link} to="/features">Features</Link>
-        <Link style={styles.link} to="/about">About</Link>
-      </nav>
+      <Link to="/features" className={location.pathname === "/features" ? "active" : ""}>
+        Features
+      </Link>
 
-      <div style={styles.actions}>
-        <Link to="/login" style={styles.login}>
-          Login
-        </Link>
-      </div>
+      <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>
+        About
+      </Link>
 
+      <Link to="/login" className={location.pathname === "/login" ? "active" : ""}>
+        Login
+      </Link>
+    </nav>
     </header>
   );
 }
-
-const styles = {
-  header: {
-    width: "100%",
-    height: "56px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0 16px",
-    backgroundColor:" rgba(49, 87, 44, 1)",
-    color: "rgba(236, 243, 158, 1)",
-  },
-
-  logo: {
-    fontSize: "18px",
-    fontWeight: "bold",
-  },
-
-  nav: {
-    display: "flex",
-    gap: "16px",
-    fontSize: "14px",
-  },
-
-  link: {
-    textDecoration: "none",
-    color: "rgba(236, 243, 158, 1)",
-  },
-
-  login: {
-    padding: "5px 10px",
-    borderRadius: "6px",
-    backgroundColor: "rgba(236, 243, 158, 1)",
-    color: "black",
-    textDecoration: "none",
-    fontSize: "14px",
-  }
-};
